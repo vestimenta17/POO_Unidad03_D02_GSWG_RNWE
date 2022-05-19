@@ -22,6 +22,7 @@ import javax.swing.JTextField;
 public class Ventana3 extends JFrame{
     private JPanel jPanel1;
     private List<JLabel> jLabelList;
+    private List<JLabel> jLabelList2;
     private List<JTextField> jTextFieldList;
     private List<JPanel> jPanelList;
     private List<JButton> jButtonList;
@@ -44,10 +45,9 @@ public class Ventana3 extends JFrame{
         this.jPanel1.setLayout(new GridLayout(9,1));
         this.iniciarPanel();
         this.iniciarEtiquetas();
-        //this.iniciarCuadrosTexto();
+        this.iniciarEtiquetas2();
         this.iniciarCombo();
         this.iniciarBotones();
-        //this.iniciarChecks();
     }
     public void iniciarPanel(){
         this.jPanelList = new ArrayList<>();
@@ -83,14 +83,13 @@ public class Ventana3 extends JFrame{
         this.jLabelList = new ArrayList<>();
         this.jLabelList.add(new JLabel("INFORMACION CARRERA"));
         this.jLabelList.get(0).setBackground(Color.CYAN);
-        this.jLabelList.add(new JLabel("Periodo Academico: "));
-        //this.jLabelList.add(new JLabel("2022-2022 ")); 
+        this.jLabelList.add(new JLabel("Periodo Academico: ")); 
         this.jLabelList.add(new JLabel("Carrera: *"));
         this.jLabelList.add(new JLabel("Modalidad: *"));
         this.jLabelList.add(new JLabel("Sede: *"));
         this.jLabelList.add(new JLabel("Campus: *"));
         this.jLabelList.add(new JLabel("Jornada: *"));
-        this.jLabelList.add(new JLabel("Fecha de Registro"));
+        this.jLabelList.add(new JLabel("Fecha de Registro: "));
         this.jPanelList.get(0).add(this.jLabelList.get(0));
         this.jLabelList.get(0).setOpaque(true);
         this.jPanelList.get(1).add(this.jLabelList.get(1));
@@ -104,8 +103,8 @@ public class Ventana3 extends JFrame{
     }
      public void iniciarCombo(){
         this.jComboBox1= new JComboBox();
-        this.jComboBox1.addItem("Arquitectura");
         this.jComboBox1.addItem("Telecomunicaciones");
+        this.jComboBox1.addItem("Arquitectura");
         this.jComboBox1.addItem("Electronica");
         this.jComboBox1.addItem("Computacion");
         this.jComboBox1.addItem("Ing. Civil");
@@ -124,6 +123,7 @@ public class Ventana3 extends JFrame{
         this.jComboBox2= new JComboBox();
         this.jComboBox2.addItem("Presencial");
         this.jComboBox2.addItem("En Línea");
+        this.jComboBox2.addItem("Dual");
         this.jPanelList.get(3).add(this.jComboBox2);
         
         this.jComboBox3= new JComboBox();
@@ -134,32 +134,28 @@ public class Ventana3 extends JFrame{
         
         this.jComboBox4= new JComboBox();
         this.jComboBox4.addItem("El Vecino");
-        this.jComboBox4.addItem("Quito Sur");
-        this.jComboBox4.addItem("Quito Norte");
+        this.jComboBox4.addItem("Maria Auxiliadora");
+        this.jComboBox4.addItem("Guayaquil");
+        this.jComboBox4.addItem("El Giron");
+        this.jComboBox4.addItem("El Giron");
+        
         this.jPanelList.get(5).add(this.jComboBox4);
         
         this.jComboBox5= new JComboBox();
         this.jComboBox5.addItem("Seleccione una opción");
         this.jComboBox5.addItem("Diurna");
-        this.jComboBox5.addItem("Nocturna");
-        this.jComboBox5.addItem("PASAPORTE");
+        this.jComboBox5.addItem("Matutina");
+        this.jComboBox5.addItem("Vespertina");
         this.jPanelList.get(6).add(this.jComboBox5);
-
     }
-    /*public void iniciarCuadrosTexto(){
-        this.jTextFieldList = new ArrayList<>();
-        this.jTextFieldList.add(new JTextField());
-        this.jTextFieldList.add(new JTextField());
-        this.jTextFieldList.add(new JTextField());
-        this.jTextFieldList.add(new JTextField());
-        this.jTextFieldList.add(new JTextField());
-        this.jTextFieldList.get(0).setColumns(10);
-        
-        this.jPanelList.get(1).add(this.jTextFieldList.get(0));
-        this.jPanelList.get(2).add(this.jTextFieldList.get(0));
-        this.jPanelList.get(3).add(this.jTextFieldList.get(0));
-        this.jPanelList.get(4).add(this.jTextFieldList.get(0));
-    }*/
+     public void iniciarEtiquetas2(){
+        this.jLabelList2 = new ArrayList<>();
+        this.jLabelList2.add(new JLabel("2022-2022"));
+        this.jLabelList2.add(new JLabel("29/04/2022"));
+        this.jPanelList.get(1).add(this.jLabelList2.get(0));
+        this.jPanelList.get(7).add(this.jLabelList2.get(1));
+    }
+  
     public void iniciarBotones(){
         this.jButtonList= new ArrayList<>();
         this.jButtonList.add(new JButton());
