@@ -18,5 +18,9 @@ public class POO_Unidad03_02_GSWG_RNWE {
        v2.setVisible(true);
        var v3 = new Ventana3("DEBER PARTE 3");
        v3.setVisible(true);
+       var v4 = new Ventana4("DEBER PARTE 4");
+       v4.setVisible(true);
+       var v5 = new Ventana5("DEBER PARTE 5");
+       v5.setVisible(true);
     }
 }

@@ -79,7 +79,7 @@ public class Ventana1 extends JFrame{
         this.jPanelList.get(3).add(this.jLabelList.get(3));
         
     }
-     public void iniciarCombo(){
+    public void iniciarCombo(){
         this.jComboBox1= new JComboBox();
         this.jComboBox1.addItem("MATRIZ CUENCA");
         this.jComboBox1.addItem("GUAYAQUIL");
