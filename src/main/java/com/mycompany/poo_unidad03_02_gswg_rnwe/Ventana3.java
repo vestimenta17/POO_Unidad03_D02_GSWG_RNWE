@@ -5,7 +5,6 @@
 package com.mycompany.poo_unidad03_02_gswg_rnwe;
 import java.awt.Color;
 import java.awt.GridLayout;
-import java.awt.TextField;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JButton;
@@ -15,15 +14,10 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-/*
- *
- * @author HP
- */
 public class Ventana3 extends JFrame{
     private JPanel jPanel1;
     private List<JLabel> jLabelList;
     private List<JLabel> jLabelList2;
-    private List<JTextField> jTextFieldList;
     private List<JPanel> jPanelList;
     private List<JButton> jButtonList;
     private JComboBox jComboBox1;
@@ -137,7 +131,8 @@ public class Ventana3 extends JFrame{
         this.jComboBox4.addItem("Maria Auxiliadora");
         this.jComboBox4.addItem("Guayaquil");
         this.jComboBox4.addItem("El Giron");
-        this.jComboBox4.addItem("El Giron");
+        this.jComboBox4.addItem("Quito Norte");
+        this.jComboBox4.addItem("Quito Sur");
         
         this.jPanelList.get(5).add(this.jComboBox4);
         
@@ -161,6 +156,7 @@ public class Ventana3 extends JFrame{
         this.jButtonList.add(new JButton());
         this.jButtonList.get(0).setText("SIGUIENTE");
         this.jPanelList.get(8).add(this.jButtonList.get(0));
+        this.jButtonList.get(0).setBackground(Color.CYAN);
     }
  
 }

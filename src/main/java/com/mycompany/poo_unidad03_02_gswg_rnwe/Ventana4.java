@@ -18,10 +18,6 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-/**
- *
- * @author User
- */
 public class Ventana4 extends JFrame{
     private JPanel jPanel1;
     private List<JPanel> jPanelList;

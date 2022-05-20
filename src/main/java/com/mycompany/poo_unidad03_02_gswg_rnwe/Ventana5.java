@@ -46,13 +46,14 @@ public class Ventana5 extends JFrame {
          this.jPanelList.add(new JPanel());
          this.jPanelList.add(new JPanel());
          
-         this.jPanelList.get(0).setBackground(Color.WHITE);
-         this.jPanelList.get(1).setBackground(Color.WHITE);
-         this.jPanelList.get(2).setBackground(Color.WHITE);
-         this.jPanelList.get(3).setBackground(Color.WHITE);
-         this.jPanelList.get(4).setBackground(Color.WHITE);
-         this.jPanelList.get(5).setBackground(Color.WHITE);
-         this.jPanelList.get(6).setBackground(Color.WHITE);
+         this.jPanelList.get(0).setBackground(Color.GRAY);
+         this.jPanelList.get(1).setBackground(Color.GRAY);
+         this.jPanelList.get(2).setBackground(Color.GRAY);
+         this.jPanelList.get(3).setBackground(Color.GRAY);
+         this.jPanelList.get(4).setBackground(Color.GRAY);
+         this.jPanelList.get(5).setBackground(Color.GRAY);
+         this.jPanelList.get(6).setBackground(Color.GRAY);
+
          
          this.jPanel1.add(this.jPanelList.get(0));
          this.jPanel1.add(this.jPanelList.get(1));
